@@ -3,7 +3,7 @@ from langchain_experimental.agents.agent_toolkits import create_python_agent
 from langchain_community.llms import HuggingFaceEndpoint
 from langchain_experimental.tools.python.tool import PythonREPLTool
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "hf_XmnfHMNCDP...YxUbIFKNpma"
 llm = HuggingFaceEndpoint(repo_id="mistralai/Mistral-7B-Instruct-v0.2",temperature=0.01)
 
 agent = create_python_agent(
