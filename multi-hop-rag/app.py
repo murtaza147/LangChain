@@ -13,7 +13,7 @@ from langchain_huggingface import HuggingFaceEndpoint
 from utils import convert_to_json
 from metric.evaluator import get_evaluator
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "hf_oTHdfvrbAgZDD...PHfTaklKWXycp"
 
 label = pipeline(task="text-classification", model="lighteternal/fact-or-opinion-xlmr-el")
 llm = HuggingFaceEndpoint(repo_id="mistralai/Mistral-7B-Instruct-v0.2",temperature=0.01)
