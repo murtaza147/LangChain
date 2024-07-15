@@ -5,7 +5,7 @@ from langchain_community.llms import HuggingFaceEndpoint
 from langchain_experimental.tools import PythonREPLTool
 from langchain.agents.output_parsers.react_json_single_input import ReActJsonSingleInputOutputParser
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "hf_XmnfHMNC...sYxUbIFKNpma"
 llm = HuggingFaceEndpoint(repo_id="mistralai/Mixtral-8x7B-Instruct-v0.1",temperature=0.01)
 #llm = llm.bind(stop = ["Observation:"])
 tools = [PythonREPLTool()]
